@@ -13,17 +13,31 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #e14b3d;
 }
 
 /* Headings */
-h1 {
-    font-size: 2em;
-    margin: 10px 0;
+h1, h2, h3, h4 {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
 }
 
-h2, h3, h4 {
-    color: #333;
-    margin: 10px 0;
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1em;
 }
 
 /* Main Content */
@@ -32,6 +46,8 @@ main {
     margin: 0 auto;
     max-width: 800px;
     background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Images */
@@ -40,16 +56,26 @@ img {
     margin: 0 auto 20px;
     max-width: 100%;
     height: auto;
+    border: 2px solid #ddd;
+    padding: 5px;
 }
 
 /* Lists */
 ul, ol {
     margin: 20px;
-    padding: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
 
 li {
     margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
 }
 
 /* Navigation */
@@ -58,6 +84,7 @@ nav ul {
     padding: 0;
     text-align: center;
     background-color: #333;
+    margin: 0;
 }
 
 nav ul li {
